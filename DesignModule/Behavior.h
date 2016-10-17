@@ -2,21 +2,29 @@
 #define BEHAVIOR_H
 class QuackBehavior {
 public:
-	virtual void quack() = 0;
+	QuackBehavior();
+	virtual ~QuackBehavior();
+	virtual void quack() const = 0;
 };
 class QuackForMallar :public QuackBehavior {
 public:
-	void quack() override;
+	QuackForMallar();
+	~QuackForMallar();
+	void quack() const override;
 };
 
 
 
 class FlyBehavior {
 public:
-	virtual void fly() = 0;
+	FlyBehavior();
+	virtual ~FlyBehavior();
+	virtual void fly() const = 0;
 };
 class FlyForMallar :public FlyBehavior {
 public:
-	void fly() override;
+	FlyForMallar();
+	~FlyForMallar();
+	void fly() const override;
 };
 #endif // !BEHAVIOR_H

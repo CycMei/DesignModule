@@ -7,14 +7,15 @@ class QuackForMallar;
 class FlyForMallar;
 
 class Duck {
-protected:
+public:
+	virtual ~Duck();
+	virtual void display() const = 0;
 	Duck(QuackBehavior *q, FlyBehavior *f);
-	void perFormQuack();
+	void perFormQuack() const;
 	void setQuackBehavior(QuackBehavior *q);
 
-	void perFormFly();
+	void perFormFly() const;
 	void setFlyBehavior(FlyBehavior *f);
-	virtual void display()=0;
 private:
 	QuackBehavior *quackbehavior;
 	FlyBehavior *flybehavior;
@@ -22,10 +23,9 @@ private:
 
 class MallardDuck :public Duck {
 public:
-	MallardDuck() :Duck(new QuackForMallar(), new FlyForMallar()) {
-
-	}
-	void display() override;
+	MallardDuck();
+	~MallardDuck();
+	void display() const override;
 };
 
 #endif // !DUCK_H
