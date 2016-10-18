@@ -3,6 +3,9 @@
 
 #include"Duck.h"
 
+#include"Observer.h"
+#include"Subject.h"
+
 void test1() {
 	Duck *mallardduck = new MallardDuck();
 	mallardduck->display();
@@ -12,7 +15,15 @@ void test1() {
 	delete mallardduck;
 }
 
+void test2() {
+	Subject *sub = new WeatherData();
+	Observer *obs = new CurrentConditionDisplay(sub);
+	sub->notifyObserver();
+	delete obs;
+	obs = nullptr;
+}
+
 
 void main() {
-	test1();
+	test2();
 }

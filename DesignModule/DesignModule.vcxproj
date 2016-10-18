@@ -147,12 +147,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Behavior.h" />
+    <ClInclude Include="DisplayElement.h" />
     <ClInclude Include="Duck.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Subject.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Behavior.cpp" />
     <ClCompile Include="Duck.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

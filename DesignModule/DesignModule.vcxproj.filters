@@ -21,6 +21,15 @@
     <ClInclude Include="Duck.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayElement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Duck.cpp">
@@ -30,6 +39,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Subject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
