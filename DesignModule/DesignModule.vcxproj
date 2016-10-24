@@ -149,6 +149,7 @@
     <ClInclude Include="Behavior.h" />
     <ClInclude Include="Beverage.h" />
     <ClInclude Include="Coffee.h" />
+    <ClInclude Include="Command.h" />
     <ClInclude Include="Condiment.h" />
     <ClInclude Include="DisplayElement.h" />
     <ClInclude Include="Duck.h" />
@@ -156,12 +157,15 @@
     <ClInclude Include="Pizza.h" />
     <ClInclude Include="PizzaStore.h" />
     <ClInclude Include="SimplePizzaFactory.h" />
+    <ClInclude Include="SimpleRemoteControl.h" />
+    <ClInclude Include="Singleton.h" />
     <ClInclude Include="Subject.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Behavior.cpp" />
     <ClCompile Include="Beverage.cpp" />
     <ClCompile Include="Coffee.cpp" />
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="Condiment.cpp" />
     <ClCompile Include="Duck.cpp" />
     <ClCompile Include="main.cpp" />
@@ -169,6 +173,7 @@
     <ClCompile Include="Pizza.cpp" />
     <ClCompile Include="PizzaStore.cpp" />
     <ClCompile Include="SimplePizzaFactory.cpp" />
+    <ClCompile Include="SimpleRemoteControl.cpp" />
     <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

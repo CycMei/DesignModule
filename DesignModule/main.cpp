@@ -14,6 +14,9 @@
 #include"Pizza.h"
 #include"PizzaStore.h"
 
+#include"Command.h"
+#include"SimpleRemoteControl.h"
+
 void test1() {
 	Duck *mallardduck = new MallardDuck();
 	mallardduck->display();
@@ -44,6 +47,12 @@ void test4() {
 	pizestore->orderPizza("cyc");
 }
 
+void test5() {
+	std::shared_ptr<Command> command(std::make_shared<LightOnCommand>(LightOnCommand()));
+	std::shared_ptr<SimpleRemoteControl> simpleremotecontrol(std::make_shared<SimpleRemoteControl>(command));
+	simpleremotecontrol->buttonWasPressed();
+}
+
 void main() {
-	test4();
+	test5();
 }
